@@ -40,7 +40,13 @@ class MainActivity : AppCompatActivity() {
         rvMain.adapter = MainAdapter(mainItems) { id ->
             when (id) {
                 1 -> {
-                    startActivity(Intent(this, ImcActivity::class.java))
+                    val intent = Intent(this@MainActivity, ImcActivity::class.java)
+                    startActivity(intent)
+                }
+
+                2 -> {
+                    val intent = Intent(this@MainActivity, TmbActivity::class.java)
+                    startActivity(intent)
                 }
             }
         }
