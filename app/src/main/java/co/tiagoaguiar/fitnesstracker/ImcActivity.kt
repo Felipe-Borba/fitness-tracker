@@ -76,7 +76,7 @@ class ImcActivity : AppCompatActivity() {
     }
 
     private fun openListActivity() {
-        val intent = Intent(this@ImcActivity, ListCalcActivity::class.java)
+        val intent = Intent(this, ListCalcActivity::class.java)
         intent.putExtra("type", "imc")
         startActivity(intent)
     }
